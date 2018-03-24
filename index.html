@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en" ng-app="k7App">
+  <head>
+    <!-- Title -->
+    <title>Kesavamoorthi Subramanian - Software Engineer | Web Designer | Web &amp; Mobile Application Developer | Database Architect | CMS &amp; eCommerce Developer | SEO, Web Hosting &amp; Domain Registration Consultant</title>
+
+    <!-- Meta Info -->
+    <meta charset="utf-8">
+
+    <meta name="description" content="Hello! My name is Kesavamoorthi Subramanian, and I am a Developer cum Designer. I believe in stories, not processes. Dialogue, not monologue. People, not users.">
+    <meta name="keywords" content="web design, mobile application, android, ios, web, wordpress, cms, seo, opencart, software, java, web hosting, domain registration, hosting, domain, design, development, apps">
+    <meta name="author" content="Kesavamoorthi Subramanian">
+
+    <meta name="robots" content="nofollow, noarchive, noimageindex">
+
+    <!-- Google Webmaster Tools -->
+    <meta name="google-site-verification" content="xZWcBnL_aIwN0nfgkMIbvGW0YuBogHdsohc2DkKYtmA">
+
+    <!-- Compatibility Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- Homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="img/icons/touch/icon.svg">
+
+    <!-- Homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon-precomposed" href="img/icons/touch/apple-touch-icon.png">
+
+    <!-- Tile Icon for Windows 8 -->
+    <meta name="msapplication-TileImage" content="img/icons/touch/ms-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#3372df">
+
+    <!-- Google Web Fonts -->
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Montserrat|Josefin+Sans:300|Homemade+Apple|Material+Icons'>
+
+    <!-- CSS Normalization -->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/h5bp.min.css">
+
+    <!-- Angular Meterial Styles -->
+    <link rel="stylesheet" href="css/angular-material.min.css">
+
+    <!-- Font Awesome Styles -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Application Style -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/responsive.min.css">
+
+    <!-- Browser Compatibility -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body ng-controller="k7AppCtrl" ngCloak>
+    <header>
+      <md-toolbar>
+        <div class="toolbar-content">
+          <div class="logo">
+            <a href="#!/home">
+              <md-icon md-svg-src="img/icons/logo.svg"></md-icon> <span>Kesavamoorthi<span hide-sm> Subramanian</span></span>
+            </a>
+          </div>
+
+          <span flex></span>
+
+          <md-icon ng-click="toggleMenu($event)" hide-gt-lg>menu</md-icon>
+
+          <nav id="main-nav" layout="row" layout-align="center center" hide-sm hide-md hide-lg>
+            <a href="#!/home">Home</a>
+            <a href="#!/about">About</a>
+            <a href="#!/services">Services</a>
+            <a href="#!/portfolio">Portfolio</a>
+            <a href="#!/testimonials">Testimonials</a>
+            <a href="#!/contact">Contact</a>
+            <a href="#" target="_blank">Blog</a>
+          </nav>
+        </div>
+      </md-toolbar>
+    </header>
+
+    <nav id="side-nav" hidden>
+      <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="menu">
+        <md-toolbar class="md-theme-light">
+          <div class="md-toolbar-tools">
+            <md-icon ng-click="toggleMenu($event)">close</md-icon>
+          </div>
+        </md-toolbar>
+        <md-content layout-wrap>
+          <div flex>
+            <a href="#!/home">
+              <md-button id="home-link">
+                <md-icon>home</md-icon>
+                <span>Home</span>
+              </md-button>
+            </a>
+          </div>
+          <div flex>
+            <a href="#!/about">
+              <md-button id="about-link">
+                <md-icon>info</md-icon>
+                <span>About</span>
+              </md-button>
+            </a>
+          </div>
+          <div flex>
+            <a href="#!/services">
+              <md-button id="services-link">
+                <md-icon>work</md-icon>
+                <span>Services</span>
+              </md-button>
+            </a>
+          </div>
+          <div flex>
+            <a href="#!/portfolio">
+              <md-button id="portfolio-link">
+                <md-icon>view_comfy</md-icon>
+                <span>Portfolio</span>
+              </md-button>
+            </a>
+          </div>
+          <div flex>
+            <a href="#!/testimonials">
+              <md-button id="testimonials-link">
+                <md-icon>message</md-icon>
+                <span>Testimonials</span>
+              </md-button>
+            </a>
+          </div>
+          <div flex>
+            <a href="#!/contact">
+              <md-button id="contact-link">
+                <md-icon>mail</md-icon>
+                <span>Contact</span>
+              </md-button>
+            </a>
+          </div>
+          <div flex>
+            <a href="#" target="_blank">
+              <md-button id="blog-link">
+                <md-icon>forum</md-icon>
+                <span>Blog</span>
+              </md-button>
+            </a>
+          </div>
+        </md-content>
+      </md-sidenav>
+    </nav>
+
+    <main>
+      <div id="home" class="page">
+        <div class="page-container">
+          <div class="intro-img">
+            <img src="img/k7.jpg" alt="">
+          </div>
+
+          <h1 class="intro-text">Hello! My name is Kesavamoorthi Subramanian, and I am a developer cum designer.</h1>
+
+          <div class="intro-msg">
+            <div class="intro-msg-heading">I believe in</div>
+
+            <div layout="row" layout-align="center center">
+              <div flex>
+                <div class="intro-msg-short-text">
+                  <md-icon>content_paste</md-icon>
+                  <em>Stories</em>, not Processes
+                </div>
+              </div>
+
+              <div flex>
+                <div class="intro-msg-short-text">
+                  <md-icon>forum</md-icon>
+                  <em>Dialogue</em>, not Monologue
+                </div>
+              </div>
+
+              <div flex>
+                <div class="intro-msg-short-text">
+                  <md-icon>people</md-icon>
+                  <em>People</em>, not Users
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="intro-scroll-down-btn-container">
+            <div class="intro-scroll-down-btn">
+              <a href="#!/about"><md-icon>expand_more</md-icon></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="about" class="page">
+        <div class="page-container">
+
+        </div>
+      </div>
+
+      <div class="divider about-divider">
+        <div class="divider-container">
+
+        </div>
+      </div>
+
+      <div id="services" class="page">
+        <div class="page-container">
+
+        </div>
+      </div>
+
+      <div class="divider services-divider">
+        <div class="divider-container">
+
+        </div>
+      </div>
+
+      <div id="portfolio" class="page">
+        <div class="page-container">
+
+        </div>
+      </div>
+
+      <div class="divider portfolio-divider">
+        <div class="divider-container">
+
+        </div>
+      </div>
+
+      <div id="testimonials" class="page">
+        <div class="page-container">
+
+        </div>
+      </div>
+
+      <div id="contact" class="page">
+        <div class="page-container">
+          <div class="section-header">
+            <h2 class="white-text">Get In Touch</h2>
+            <h6 class="white-text">Have any queries? Drop me a message.</h6>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <div layout="row" layout-align="center center">
+              <div flex>
+                <md-input-container>
+                  <label>Your Name</label>
+                  <input name="kName" id="kName" ng-model="contact.kName" ng-required>
+                  <div ng-messages="contactForm.kName.$error">
+                    <div ng-message="required">Name is required!</div>
+                  </div>
+                </md-input-container>
+              </div>
+
+              <div flex>
+                <md-input-container>
+                  <label>Your Email</label>
+                  <input type="email" name="kEmail" id="kEmail" ng-model="contact.kEmail" minlength="10" maxlength="100" ng-pattern="/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/" ng-required>
+                  <div ng-messages="contactForm.kEmail.$error">
+                    <div ng-message="required">Email is required!</div>
+                    <div ng-message="pattern">Email is invalid!</div>
+                  </div>
+                </md-input-container>
+              </div>
+
+              <div flex>
+                <md-input-container>
+                  <label>Subject</label>
+                  <input name="kSubject" id="kSubject" ng-model="contact.kSubject" ng-required>
+                  <div ng-messages="contactForm.kSubject.$error">
+                    <div ng-message="required">Subject is required!</div>
+                  </div>
+                </md-input-container>
+              </div>
+            </div>
+
+            <div layout="row" layout-align="center center">
+              <div flex>
+                <md-input-container>
+                  <label>Your Message</label>
+                  <textarea name="kMessage" id="kMessage" ng-model="contact.kMessage" ng-required></textarea>
+                  <div ng-messages="contactForm.kMessage.$error">
+                    <div ng-message="required">Message is required!</div>
+                  </div>
+                </md-input-container>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div layout="row" layout-align="center center">
+        <div flex class="footer-details">
+          <div class="icon-top red-text">
+            <md-icon md-font-icon="fa-copyright" class="fa"></md-icon>
+          </div>
+          <div>2013 - {{currentYear}}</div>
+          <div>Kesavamoorthi Subramanian</div>
+        </div>
+
+        <div flex class="footer-details">
+          <div class="icon-top blue-text">
+            <md-icon md-font-icon="fa-envelope-o" class="fa"></md-icon>
+          </div>
+          <div><a href="mailto:info@k7moorthi.in" rel="nofollow">info@k7moorthi.in</a></div>
+          <div><a href="mailto:k7moorthi@gmail.com" rel="nofollow">k7moorthi@gmail.com</a></div>
+        </div>
+
+        <div flex class="footer-details">
+          <md-icon md-svg-src="img/qr.svg" class="qr-code"></md-icon>
+        </div>
+
+        <div flex class="social">
+          <div class="social-header">Stay Connected</div>
+          <div>
+            <span>Socially: </span>
+            <a href="https://www.facebook.com/k7moorthi" target="_blank" rel="nofollow"><md-icon md-font-icon="fa-facebook" class="fa"></md-icon></a>
+            <a href="https://www.twitter.com/k7moorthi" target="_blank" rel="nofollow"><md-icon md-font-icon="fa-twitter" class="fa"></md-icon></a>
+            <a href="https://plus.google.com/+KesavamoorthiS" target="_blank" rel="nofollow"><md-icon md-font-icon="fa-google-plus" class="fa"></md-icon></a>
+            <a href="https://www.linkedin.com/pub/kesavamoorthi-subramanian/a5/79a/851" target="_blank" rel="nofollow"><md-icon md-font-icon="fa-linkedin" class="fa"></md-icon></a>
+            <a href="https://www.youtube.com/channel/UCAzBeMdVuAz4yoInDUxERsg" target="_blank" rel="nofollow"><md-icon md-font-icon="fa-youtube" class="fa"></md-icon></a>
+            <a href="https://www.slideshare.net/k7moorthi" target="_blank" rel="nofollow"><md-icon md-font-icon="fa-slideshare" class="fa"></md-icon></a>
+          </div>
+
+          <div>
+            <span>Technically: </span>
+            <a href="https://stackoverflow.com/users/1632232/kesavan" target="_blank" rel="nofollow"><md-icon md-font-icon="fa-stack-overflow" class="fa"></md-icon></a>
+            <a href="https://github.com/k7moorthi" target="_blank" rel="nofollow"><md-icon md-font-icon="fa-github" class="fa"></md-icon></a>
+            <a href="https://bitbucket.org/k7moorthi" target="_blank" rel="nofollow"><md-icon md-font-icon="fa-bitbucket" class="fa"></md-icon></a>
+            <a href="https://angel.co/kesavamoorthi-subramanian" target="_blank" rel="nofollow"><md-icon md-font-icon="fa-angellist" class="fa"></md-icon></a>
+            <a href="http://jsfiddle.net/user/k7moorthi/" target="_blank" rel="nofollow"><md-icon md-font-icon="fa-jsfiddle" class="fa"></md-icon></a>
+            <a href="https://www.freelancer.com/u/k7moorthi.html" target="_blank" rel="nofollow"><md-icon md-svg-src="img/icons/freelancer.svg" class="freelancer-icon"></md-icon></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="scroll-to-top-btn-container" hide>
+      <div class="scroll-to-top-btn">
+        <a href="#!/home"><md-icon>vertical_align_top</md-icon></a>
+      </div>
+    </div>
+
+    <!-- Angular Libraries -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-aria.min.js"></script>
+    <script src="js/angular-material.min.js"></script>
+
+    <!-- jQuery Libraries -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.migrate.min.js"></script>
+
+    <!-- Application Scripts -->
+    <script src="js/app.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-44168159-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
