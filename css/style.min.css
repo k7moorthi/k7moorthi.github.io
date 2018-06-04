@@ -27,6 +27,8 @@ html, body {
   background-position: 0% 0%, 50% 50%;
   background-size: auto, cover;
   background-attachment: fixed, fixed;
+
+  overflow: hidden; /* to be removed */
 }
 
 a, a:hover {
